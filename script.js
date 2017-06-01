@@ -13,9 +13,12 @@ function shuffle(a) {
 }
 
 function spin() {
-  var randomKeystones = shuffle(KEYSTONE).slice(0, 5);
-  var randomClass = shuffle(CLASS).slice(0, 5);
-  var randomGem = shuffle(GEM).slice(0, 5);
+  shuffle(KEYSTONE);
+  shuffle(CLASS);
+  shuffle(GEM);
+  var randomKeystones = KEYSTONE.slice(0, 5);
+  var randomClass = CLASS.slice(0, 5);
+  var randomGem = GEM.slice(0, 5);
   
   var html = "<table><tr><td>keystone</td><td>Class</td><td>Gem</td></tr><tr><td>"+randomKeystones[0]+"</td><td>"+randomClass[0]+"</td><td>"+randomGem[0]+"</td></tr><tr><td>"+randomKeystones[1]+"</td><td>"+randomClass[1]+"</td><td>"+randomGem[1]+"</td></tr><tr><td>"+randomKeystones[2]+"</td><td>"+randomClass[2]+"</td><td>"+randomGem[2]+"</td></tr><tr><td>"+randomKeystones[3]+"</td><td>"+randomClass[3]+"</td><td>"+randomGem[3]+"</td></tr><tr><td>"+randomKeystones[4]+"</td><td>"+randomClass[4]+"</td><td>"+randomGem[4]+"</td></tr>";
   
