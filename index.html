@@ -6,8 +6,14 @@
     <script src="script.js" type="text/javascript"></script>
   </head>
   <body>
-  	<div id="maindiv">
-	<button type="button" onclick="spin()">Spin the wheel!</button>	   
-     	</div>
+  	<div id="maindiv" style="min-height:200px">
+		<button type="button" onclick="spin()">Spin the wheel!</button>
+    </div>
+  	<div id="optiondiv">
+		<input type="checkbox" name="config" value="movement" />include movement skills?</br>
+		<input type="checkbox" name="config" value="defense" />include defense skills?</br>
+		<input type="checkbox" name="config" value="unique" />include unique? (SSF mode)</br>
+		<input type="checkbox" name="config" value="meta" />force anti-meta?</br>
+    </div>
   </body>
 </html>
