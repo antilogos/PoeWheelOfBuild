@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <title>Wheel of Build</title>
     <script src="script.js" type="text/javascript"></script>
+	<style>
+	table, th, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	}
+	</style>
   </head>
   <body>
-  	<div id="maindiv" style="min-height:200px">
-		<button type="button" onclick="spin()">Spin the wheel!</button>
-    </div>
-  	<div id="optiondiv">
+  	<div id="maindiv" style="min-height:200px;">
+		<div style="width:50%; min-width:400px; margin-left:auto; margin-right:auto;">
+			<table id="resulttable" style="width: 100%">
+				<thead>
+					<tr>
+						<th>Ascendancy</th>
+						<th>Gem</th>
+						<th>Style</th>
+						<th>Keystone</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+    </div
+	<div id="spinbutton">
+		<div style="width:200px; margin-left:auto; margin-right:auto; padding:15px;"> 
+			<button type="button" onclick="spin()">Spin the wheel!</button>
+		</div>
+	</div>
+  	<div id="optiondiv" style="float: right" >
+		<p style="text-align:center">Configuration:</p>
 		<input type="checkbox" name="config" value="movement" />include movement skills?</br>
 		<input type="checkbox" name="config" value="defense" />include defense skills?</br>
-		<input type="checkbox" name="config" value="unique" />exclude uniques? (SSF mode)</br>
+		<input type="checkbox" name="config" value="unique" />include unique? (SSF mode)</br>
 		<input type="checkbox" name="config" value="meta" />force anti-meta?</br>
     </div>
   </body>
