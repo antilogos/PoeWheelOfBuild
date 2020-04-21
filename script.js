@@ -79,8 +79,8 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Blast Rain","attribute":"dex","tag":["Bow"],"isunique":"no","weight":1},
 {"name":"Blink Arrow","attribute":"dex","tag":["Movement"],"isunique":"no","weight":1},
 {"name":"Blood Rage","attribute":"dex","tag":["Defense"],"isunique":"no","weight":1},
-{"name":"Burning Arrow","attribute":"dex","tag":["Bow","Burning"],"isunique":"no","weight":1},
-{"name":"Caustic Arrow","attribute":"dex","tag":["Bow","Corruption"],"isunique":"no","weight":1},
+{"name":"Burning Arrow","attribute":"dex","tag":["Bow","Burning","Fire"],"isunique":"no","weight":1},
+{"name":"Caustic Arrow","attribute":"dex","tag":["Bow","Corruption","Chaos"],"isunique":"no","weight":1},
 {"name":"Charged Dash","attribute":"dex","tag":["Melee","Channel"],"isunique":"no","weight":1},
 {"name":"Cobra Lash","attribute":"dex","tag":["Melee"],"isunique":"no","weight":1},
 {"name":"Cremation","attribute":"dex","tag":["Caster","Fire"],"isunique":"no","weight":1},
@@ -91,7 +91,7 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Double Strike","attribute":"dex","tag":["Melee"],"isunique":"no","weight":1},
 {"name":"Dual Strike","attribute":"dex","tag":["Dual Wield"],"isunique":"no","weight":1},
 {"name":"Elemental Hit","attribute":"dex","tag":["One handed","Dual Wield","Two handed","Bow","Wand","Multi Element","Cold","Fire","Lightning"],"isunique":"no","weight":1},
-{"name":"Ensnaring Arrow","attribute":"dex","tag":["Bow"],"isunique":"no","weight":1},
+{"name":"Ensnaring Arrow","attribute":"dex","tag":["Defense"],"isunique":"no","weight":1},
 {"name":"Ethereal Knives","attribute":"dex","tag":["Caster","Physical"],"isunique":"no","weight":1},
 {"name":"Explosive Arrow","attribute":"dex","tag":["Bow","Fire"],"isunique":"no","weight":1},
 {"name":"Explosive Trap","attribute":"dex","tag":["Trap"],"isunique":"no","weight":1},
@@ -136,7 +136,7 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Summon Ice Golem","attribute":"dex","tag":["Golem"],"isunique":"no","weight":1},
 {"name":"Temporal Chains","attribute":"dex","tag":["Curse"],"isunique":"no","weight":1},
 {"name":"Tornado Shot","attribute":"dex","tag":["Bow"],"isunique":"no","weight":1},
-{"name":"Toxic Rain","attribute":"dex","tag":["Bow","Corruption"],"isunique":"no","weight":1},
+{"name":"Toxic Rain","attribute":"dex","tag":["Bow","Corruption","Chaos"],"isunique":"no","weight":1},
 {"name":"Unearth","attribute":"dex","tag":["Caster","Physical","Army"],"isunique":"no","weight":1},
 {"name":"Venom Gyre","attribute":"dex","tag":["Melee"],"isunique":"no","weight":1},
 {"name":"Viper Strike","attribute":"dex","tag":["Melee","Ailment","Chaos"],"isunique":"no","weight":1},
@@ -146,17 +146,17 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Withering Step","attribute":"dex","tag":["Movement"],"isunique":"no","weight":1},
 {"name":"Arc","attribute":"int","tag":["Caster","Lightning"],"isunique":"no","weight":1},
 {"name":"Arcane Cloak","attribute":"int","tag":["Defense"],"isunique":"no","weight":1},
-{"name":"Arctic Breath","attribute":"int","tag":["Caster","Shiver"],"isunique":"no","weight":1},
+{"name":"Arctic Breath","attribute":"int","tag":["Caster","Shiver","Cold"],"isunique":"no","weight":1},
 {"name":"Armageddon Brand","attribute":"int","tag":["Caster","Fire"],"isunique":"no","weight":1},
 {"name":"Assassin's Mark","attribute":"int","tag":["Curse"],"isunique":"no","weight":1},
 {"name":"Ball Lightning","attribute":"int","tag":["Caster","Lightning"],"isunique":"no","weight":1},
-{"name":"Bane","attribute":"int","tag":["Caster","Corruption","Selfcast"],"isunique":"no","weight":1},
-{"name":"Blight","attribute":"int","tag":["Caster","Corruption"],"isunique":"no","weight":1},
+{"name":"Bane","attribute":"int","tag":["Caster","Corruption","Selfcast","Chaos"],"isunique":"no","weight":1},
+{"name":"Blight","attribute":"int","tag":["Caster","Corruption","Chaos"],"isunique":"no","weight":1},
 {"name":"Bodyswap","attribute":"int","tag":["Caster","Fire"],"isunique":"no","weight":1},
 {"name":"Bone Offering","attribute":"int","tag":["Defense"],"isunique":"no","weight":1},
 {"name":"Brand Recall","attribute":"int","tag":["Defense"],"isunique":"no","weight":1},
 {"name":"Clarity","attribute":"int","tag":["Aura"],"isunique":"no","weight":1},
-{"name":"Cold Snap","attribute":"int","tag":["Caster","Shiver"],"isunique":"no","weight":1},
+{"name":"Cold Snap","attribute":"int","tag":["Caster","Shiver","Cold"],"isunique":"no","weight":1},
 {"name":"Conductivity","attribute":"int","tag":["Curse"],"isunique":"no","weight":1},
 {"name":"Contagion","attribute":"int","tag":["Defense"],"isunique":"no","weight":1},
 {"name":"Conversion Trap","attribute":"int","tag":["Army"],"isunique":"no","weight":1},
@@ -168,7 +168,7 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Divine Ire","attribute":"int","tag":["Caster","Conversion","Lightning","Channel"],"isunique":"no","weight":1},
 {"name":"Elemental Weakness","attribute":"int","tag":["Curse"],"isunique":"no","weight":1},
 {"name":"Enfeeble","attribute":"int","tag":["Curse"],"isunique":"no","weight":1},
-{"name":"Essence Drain","attribute":"int","tag":["Caster","Corruption"],"isunique":"no","weight":1},
+{"name":"Essence Drain","attribute":"int","tag":["Caster","Corruption","Chaos"],"isunique":"no","weight":1},
 {"name":"Fireball","attribute":"int","tag":["Caster","Fire"],"isunique":"no","weight":1},
 {"name":"Firestorm","attribute":"int","tag":["Caster","Fire"],"isunique":"no","weight":1},
 {"name":"Flame Dash","attribute":"int","tag":["Movement"],"isunique":"no","weight":1},
@@ -204,8 +204,8 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Pyroclast Mine","attribute":"int","tag":["Mine"],"isunique":"no","weight":1},
 {"name":"Raise Spectre","attribute":"int","tag":["Spectre"],"isunique":"no","weight":1},
 {"name":"Raise Zombie","attribute":"int","tag":["Zombie"],"isunique":"no","weight":1},
-{"name":"Righteous Fire","attribute":"int","tag":["Burning"],"isunique":"no","weight":1},
-{"name":"Scorching Ray","attribute":"int","tag":["Caster","Burning","Channel"],"isunique":"no","weight":1},
+{"name":"Righteous Fire","attribute":"int","tag":["Burning","Fire"],"isunique":"no","weight":1},
+{"name":"Scorching Ray","attribute":"int","tag":["Caster","Burning","Channel","Fire"],"isunique":"no","weight":1},
 {"name":"Shock Nova","attribute":"int","tag":["Caster","Lightning"],"isunique":"no","weight":1},
 {"name":"Siphoning Trap","attribute":"int","tag":["Trap"],"isunique":"no","weight":1},
 {"name":"Soulrend","attribute":"int","tag":["Caster","Corruption"],"isunique":"no","weight":1},
@@ -224,7 +224,7 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Summon Skeletons","attribute":"int","tag":["Army"],"isunique":"no","weight":1},
 {"name":"Summon Skitterbots","attribute":"int","tag":["Aura"],"isunique":"no","weight":1},
 {"name":"Tempest Shield","attribute":"int","tag":["Defense"],"isunique":"no","weight":1},
-{"name":"Vortex","attribute":"int","tag":["Caster","Shiver"],"isunique":"no","weight":1},
+{"name":"Vortex","attribute":"int","tag":["Caster","Shiver","Cold"],"isunique":"no","weight":1},
 {"name":"Wave of Conviction","attribute":"int","tag":["Caster","Multi Element"],"isunique":"no","weight":1},
 {"name":"Winter Orb","attribute":"int","tag":["Caster","Cold","Channel"],"isunique":"no","weight":1},
 {"name":"Wither","attribute":"int","tag":["Defense"],"isunique":"no","weight":1},
@@ -252,7 +252,7 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","tag":["Army"],"isunique":"n
 {"name":"Glacial Hammer","attribute":"str","tag":["Melee"],"isunique":"no","weight":1},
 {"name":"Ground Slam","attribute":"str","tag":["Melee"],"isunique":"no","weight":1},
 {"name":"Heavy Strike","attribute":"str","tag":["Melee"],"isunique":"no","weight":1},
-{"name":"Herald of Ash","attribute":"str","tag":["Burning"],"isunique":"no","weight":1},
+{"name":"Herald of Ash","attribute":"str","tag":["Burning","Fire"],"isunique":"no","weight":1},
 {"name":"Herald of Purity","attribute":"str","tag":["Herald"],"isunique":"no","weight":1},
 {"name":"Holy Flame Totem","attribute":"str","tag":["Totem"],"isunique":"no","weight":1},
 {"name":"Ice Crash","attribute":"str","tag":["Melee"],"isunique":"no","weight":1},
@@ -432,19 +432,23 @@ function spin() {
 		&& (!g.isUnique || isIncludeUnique));
 
 	// Build a build
-	var build = buildBuild();
+	for(i = 0; i < 9; i++) {
+		var build = buildBuild();
 
-	var tableRef = document.getElementById("resulttable").getElementsByTagName("tbody")[0];
-	var tableRow = tableRef.insertRow(0);
-	var ascendCell = tableRow.insertCell(0);
-	ascendCell.appendChild(document.createTextNode(build.ascendancy));
-	var gemCell = tableRow.insertCell(1);
-	gemCell.appendChild(document.createTextNode(build.gem)); 
-	var styleCell = tableRow.insertCell(2);
-	styleCell.appendChild(document.createTextNode(build.style)); 
-	var keysCell = tableRow.insertCell(3);
-	keysCell.appendChild(document.createTextNode(build.keystone));
-	if(tableRef.rows.length > 8) tableRef.deleteRow(-1);
+		var tableRef = document.getElementById("resulttable").getElementsByTagName("tbody")[0];
+		var tableRow = tableRef.insertRow(0);
+		var numCell = tableRow.insertCell(0);
+		numCell.appendChild(document.createTextNode((9-i)+"-"));
+		var ascendCell = tableRow.insertCell(1);
+		ascendCell.appendChild(document.createTextNode(build.ascendancy));
+		var gemCell = tableRow.insertCell(2);
+		gemCell.appendChild(document.createTextNode(build.gem)); 
+		var styleCell = tableRow.insertCell(3);
+		styleCell.appendChild(document.createTextNode(build.style)); 
+		var keysCell = tableRow.insertCell(4);
+		keysCell.appendChild(document.createTextNode(build.keystone));
+		if(tableRef.rows.length > 8) tableRef.deleteRow(-1);
+	}
 };
 
 function initConf() {
