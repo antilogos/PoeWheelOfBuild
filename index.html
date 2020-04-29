@@ -28,6 +28,39 @@
 	  background-color: black;
 	  color: white;
 	}
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+	  border-bottom: 1px dotted black;
+	}
+	.tooltip, .dark-mode{
+	  border-bottom: 1px dotted white;
+	}
+
+	.tooltip .tooltiptext{
+	  visibility: hidden;
+	  width: 120px;
+	  background-color: black;
+	  color: #fff;
+	  text-align: center;
+	  border-radius: 6px;
+	  padding: 5px 0;
+	  
+	  /* Position the tooltip */
+	  position: absolute;
+	  z-index: 1;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -60px;
+	}
+	
+	.tooltip .tooltiptext .dark-mode{
+	  background-color: white;
+	}
+
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	}
 	</style>
   </head>
   <body class="dark-mode">
