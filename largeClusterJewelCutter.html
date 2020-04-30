@@ -39,6 +39,12 @@
 			var x = document.getElementById("clusterSelect");
 			var y = document.getElementById("firstSelect");
 			var z = document.getElementById("secondSelect");
+			while(y.firstChild){
+				y.removeChild(y.firstChild);
+			}
+			while(z.firstChild){
+				z.removeChild(z.firstChild);
+			}
 			clusterType.find( e => e.name == x.options[x.selectedIndex].value).list.forEach( elem => {
 				var option1 = document.createElement("option");
 				option1.text = elem;
