@@ -132,7 +132,7 @@ var GEM=[{"name":"Animate Weapon","attribute":"dex","holder":["Army"],"dealer":[
 {"name":"Seismic Trap","attribute":"dex","holder":["Caster"],"dealer":["Trap"],"taker":["Pure"],"isunique":"no","weight":1},
 {"name":"Shattering Steel","attribute":"dex","holder":["Melee"],"dealer":["Self"],"taker":["Pure"],"isunique":"no","weight":1},
 {"name":"Shrapnel Ballista","attribute":"dex","holder":["Bow"],"dealer":["Totem"],"taker":["Hit"],"isunique":"no","weight":1},
-{"name":"Siege Ballista","attribute":"dex","holder":["Bow"],"dealer":["Bow"],"taker":["Hit"],"isunique":"no","weight":1},
+{"name":"Siege Ballista","attribute":"dex","holder":["Bow"],"dealer":["Totem"],"taker":["Hit"],"isunique":"no","weight":1},
 {"name":"Smoke Mine","attribute":"dex","holder":["Movement"],"dealer":["Movement"],"taker":["Movement"],"isunique":"no","weight":1},
 {"name":"Spectral Shield Throw","attribute":"dex","holder":["Shield"],"dealer":["Self"],"taker":["Hit"],"isunique":"no","weight":1},
 {"name":"Spectral Throw","attribute":"dex","holder":["Melee"],"dealer":["Self"],"taker":["Hit"],"isunique":"no","weight":1},
