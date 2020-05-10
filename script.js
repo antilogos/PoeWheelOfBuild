@@ -19,46 +19,46 @@ var CLASS = [{"name":"Hierophant","attribute":["str","int"],"tag":["Totem","Cast
 {"name":"Ascendant","attribute":["str","int","dex"],"tag":[],"exclude":[],"weight":12,"img":"https://docs.google.com/drawings/d/e/2PACX-1vTuu5gdCdWrirllYCmMIpFLtqsx2GQd-udT3r5Q7p9B5RGcypYyKgnWpPEckiskEDtalGM7QtIj_zwY/pub?w=75&h=75"}];
 var CLASS_F= [];
 
-var TAG=[{"name":"Dealer","domain":"Dealer","level":0,"weight":0,"subtag":["Construct","Trigger","Self"],"exclusion":[],"tooltip":"Broad category of what is dealing the damage"},
-{"name":"Construct","domain":"Dealer","level":1,"weight":75,"subtag":["Trap","Mine","Totem"],"exclusion":[],"tooltip":"You have to deal damage by proxy"},
-{"name":"Trap","domain":"Dealer","level":2,"weight":100,"subtag":[],"exclusion":["Melee","Summoner","Shield"],"tooltip":"You have to deal damage with Traps"},
-{"name":"Mine","domain":"Dealer","level":2,"weight":100,"subtag":[],"exclusion":["Melee","Summoner","Shield"],"tooltip":"You have to deal damage with Mines"},
-{"name":"Totem","domain":"Dealer","level":2,"weight":100,"subtag":[],"exclusion":["Shield"],"tooltip":"You have to deal damage with Totems"},
-{"name":"Trigger","domain":"Dealer","level":1,"weight":75,"subtag":["Channel","Cast on Crit","Spellslinger","Unique"],"exclusion":["Zombie","Spectre","Golem","Herald"],"tooltip":"You have to deal damage by trigger"},
-{"name":"Channel","domain":"Dealer","level":2,"weight":100,"subtag":[],"exclusion":["Ailment","Melee","Shield","Ranged"],"tooltip":"You have to deal damage with Cast while Channeling"},
-{"name":"Cast on Crit","domain":"Dealer","level":2,"weight":100,"subtag":[],"exclusion":["Ailment","Melee","Shield","Ranged"],"tooltip":"You have to deal damage with Cast on Crit"},
-{"name":"Spellslinger","domain":"Dealer","level":2,"weight":100,"subtag":[],"exclusion":["Melee","Bow","Shield"],"tooltip":"You have to deal damage with Spellslinger"},
-{"name":"Manual","domain":"Dealer","level":1,"weight":10,"subtag":["Brand","Self"],"exclusion":[],"tooltip":"You have to deal damage yourself"},
-{"name":"Self","domain":"Dealer","level":2,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with your skills"},
+var TAG=[{"name":"Dealer","domain":"Dealer","level":0,"weight":100,"subtag":["Construct","Trigger","Manual"],"exclusion":[],"tooltip":"Broad category of what is dealing the damage"},
+{"name":"Construct","domain":"Dealer","level":1,"weight":20,"subtag":["Trap","Mine","Totem"],"exclusion":[],"tooltip":"You have to deal damage by proxy"},
+{"name":"Trap","domain":"Dealer","level":2,"weight":6,"subtag":[],"exclusion":["Melee","Summoner","Shield"],"tooltip":"You have to deal damage with Traps"},
+{"name":"Mine","domain":"Dealer","level":2,"weight":4,"subtag":[],"exclusion":["Melee","Summoner","Shield"],"tooltip":"You have to deal damage with Mines"},
+{"name":"Totem","domain":"Dealer","level":2,"weight":10,"subtag":[],"exclusion":["Shield"],"tooltip":"You have to deal damage with Totems"},
+{"name":"Trigger","domain":"Dealer","level":1,"weight":20,"subtag":["Channel","Cast on Crit","Spellslinger","Unique"],"exclusion":["Zombie","Spectre","Golem","Herald"],"tooltip":"You have to deal damage by trigger"},
+{"name":"Channel","domain":"Dealer","level":2,"weight":6,"subtag":[],"exclusion":["Ailment","Melee","Shield","Ranged"],"tooltip":"You have to deal damage with Cast while Channeling"},
+{"name":"Cast on Crit","domain":"Dealer","level":2,"weight":10,"subtag":[],"exclusion":["Ailment","Melee","Shield","Ranged"],"tooltip":"You have to deal damage with Cast on Crit"},
+{"name":"Spellslinger","domain":"Dealer","level":2,"weight":4,"subtag":[],"exclusion":["Melee","Bow","Shield"],"tooltip":"You have to deal damage with Spellslinger"},
+{"name":"Manual","domain":"Dealer","level":1,"weight":60,"subtag":["Brand","Self"],"exclusion":[],"tooltip":"You have to deal damage by using manual skills"},
+{"name":"Self","domain":"Dealer","level":2,"weight":55,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage by using your skills yourself"},
 {"name":"Brand","domain":"Dealer","level":2,"weight":5,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with Brands"},
-{"name":"Holder","domain":"Holder","level":0,"weight":0,"subtag":["Summoner","Melee","Ranged","Caster","Shield"],"exclusion":[],"tooltip":"Broad category of how your dealing damage"},
-{"name":"Summoner","domain":"Holder","level":1,"weight":50,"subtag":["Spectre","Zombie","Golem","Herald","Army","Unique"],"exclusion":["Duration"],"tooltip":"You have to deal damage with Minions"},
-{"name":"Zombie","domain":"Holder","level":2,"weight":15,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Zombies"},
-{"name":"Spectre","domain":"Holder","level":2,"weight":100,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Spectre"},
-{"name":"Golem","domain":"Holder","level":2,"weight":20,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Golems"},
-{"name":"Herald","domain":"Holder","level":2,"weight":20,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Heralds"},
-{"name":"Army","domain":"Holder","level":2,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with temporary Minions"},
-{"name":"Melee","domain":"Holder","level":1,"weight":100,"subtag":["One handed","Dual Wield","Two handed","Barefist"],"exclusion":["Trap","Mine","Cast on Crit","Spellslinger","Duration"],"tooltip":"You have to deal damage with a Melee weapon"},
-{"name":"One handed","domain":"Holder","level":2,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with a One handed weapon and Shield"},
-{"name":"Dual Wield","domain":"Holder","level":2,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with two One handed weapon"},
-{"name":"Two handed","domain":"Holder","level":2,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with a Two handed weapon"},
+{"name":"Holder","domain":"Holder","level":0,"weight":100,"subtag":["Summoner","Melee","Ranged","Caster","Shield"],"exclusion":[],"tooltip":"Broad category of how your dealing damage"},
+{"name":"Summoner","domain":"Holder","level":1,"weight":12,"subtag":["Spectre","Zombie","Golem","Herald","Army","Unique"],"exclusion":["Duration"],"tooltip":"You have to deal damage with Minions"},
+{"name":"Zombie","domain":"Holder","level":2,"weight":1,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Zombies"},
+{"name":"Spectre","domain":"Holder","level":2,"weight":3,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Spectre"},
+{"name":"Golem","domain":"Holder","level":2,"weight":1,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Golems"},
+{"name":"Herald","domain":"Holder","level":2,"weight":2,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Heralds"},
+{"name":"Army","domain":"Holder","level":2,"weight":5,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with temporary Minions"},
+{"name":"Melee","domain":"Holder","level":1,"weight":26,"subtag":["One handed","Dual Wield","Two handed","Barefist"],"exclusion":["Trap","Mine","Cast on Crit","Spellslinger","Duration"],"tooltip":"You have to deal damage with a Melee weapon"},
+{"name":"One handed","domain":"Holder","level":2,"weight":8,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with a One handed weapon and Shield"},
+{"name":"Dual Wield","domain":"Holder","level":2,"weight":8,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with two One handed weapon"},
+{"name":"Two handed","domain":"Holder","level":2,"weight":10,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with a Two handed weapon"},
 {"name":"Barefist","domain":"Holder","level":2,"weight":0,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with your bare fist"},
-{"name":"Ranged","domain":"Holder","level":1,"weight":100,"subtag":["Bow","Wand"],"exclusion":["Cast on Crit"],"tooltip":"You have to deal damage with a Ranged weapon"},
-{"name":"Bow","domain":"Holder","level":2,"weight":100,"subtag":[],"exclusion":["Spellslinger"],"tooltip":"You have to deal damage with a Bow weapon"},
-{"name":"Wand","domain":"Holder","level":2,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with a Wand weapon"},
-{"name":"Caster","domain":"Holder","level":1,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with Spell"},
-{"name":"Shield","domain":"Holder","level":1,"weight":5,"subtag":[],"exclusion":["Trap","Mine","Cast on Crit","Spellslinger","Duration"],"tooltip":"You have to deal damage with a Shield weapon"},
-{"name":"Taker","domain":"Taker","level":0,"weight":0,"subtag":["Duration","Hit","Support"],"exclusion":[],"tooltip":"Broad category of what damage your are dealing"},
-{"name":"Duration","domain":"Taker","level":1,"weight":33,"subtag":["Corruption","Shiver","Burning"],"exclusion":["Melee","Summoner","Shield"],"tooltip":"You have to deal Damage over time"},
-{"name":"Corruption","domain":"Taker","level":2,"weight":100,"subtag":[],"exclusion":["Wand"],"tooltip":"You have to deal Chaos Damage over time"},
-{"name":"Shiver","domain":"Taker","level":2,"weight":100,"subtag":[],"exclusion":["Ranged"],"tooltip":"You have to deal Cold Damage over time"},
-{"name":"Burning","domain":"Taker","level":2,"weight":100,"subtag":[],"exclusion":["Ranged"],"tooltip":"You have to deal Fire Damage over time"},
-{"name":"Hit","domain":"Taker","level":1,"weight":100,"subtag":["Pure","Conversion","Multi Element","Mana","Ailment"],"exclusion":[],"tooltip":"You have to deal damage with Hits"},
-{"name":"Pure","domain":"Taker","level":2,"weight":100,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage of one type"},
-{"name":"Conversion","domain":"Taker","level":2,"weight":75,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with converted damage"},
-{"name":"Multi Element","domain":"Taker","level":2,"weight":25,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage of multiple type"},
-{"name":"Mana","domain":"Taker","level":2,"weight":5,"subtag":[],"exclusion":["Construct","Trigger","Melee","Summoner","Shield","Ranged"],"tooltip":"You have to deal damage with Archmage"},
-{"name":"Ailment","domain":"Taker","level":2,"weight":25,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Ailments from your hits"},
+{"name":"Ranged","domain":"Holder","level":1,"weight":26,"subtag":["Bow","Wand"],"exclusion":["Cast on Crit"],"tooltip":"You have to deal damage with a Ranged weapon"},
+{"name":"Bow","domain":"Holder","level":2,"weight":16,"subtag":[],"exclusion":["Spellslinger"],"tooltip":"You have to deal damage with a Bow weapon"},
+{"name":"Wand","domain":"Holder","level":2,"weight":10,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with a Wand weapon"},
+{"name":"Caster","domain":"Holder","level":1,"weight":32,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with Spell"},
+{"name":"Shield","domain":"Holder","level":1,"weight":4,"subtag":[],"exclusion":["Trap","Mine","Cast on Crit","Spellslinger","Duration"],"tooltip":"You have to deal damage with a Shield weapon"},
+{"name":"Taker","domain":"Taker","level":0,"weight":100,"subtag":["Duration","Hit","Support"],"exclusion":[],"tooltip":"Broad category of what damage your are dealing"},
+{"name":"Duration","domain":"Taker","level":1,"weight":15,"subtag":["Corruption","Shiver","Burning"],"exclusion":["Melee","Summoner","Shield"],"tooltip":"You have to deal Damage over time"},
+{"name":"Corruption","domain":"Taker","level":2,"weight":7,"subtag":[],"exclusion":["Wand"],"tooltip":"You have to deal Chaos Damage over time"},
+{"name":"Shiver","domain":"Taker","level":2,"weight":4,"subtag":[],"exclusion":["Ranged"],"tooltip":"You have to deal Cold Damage over time"},
+{"name":"Burning","domain":"Taker","level":2,"weight":4,"subtag":[],"exclusion":["Ranged"],"tooltip":"You have to deal Fire Damage over time"},
+{"name":"Hit","domain":"Taker","level":1,"weight":85,"subtag":["Pure","Conversion","Multi Element","Mana","Ailment"],"exclusion":[],"tooltip":"You have to deal damage with Hits"},
+{"name":"Pure","domain":"Taker","level":2,"weight":30,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage of one type"},
+{"name":"Conversion","domain":"Taker","level":2,"weight":30,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage with converted damage"},
+{"name":"Multi Element","domain":"Taker","level":2,"weight":15,"subtag":[],"exclusion":[],"tooltip":"You have to deal damage of multiple type"},
+{"name":"Mana","domain":"Taker","level":2,"weight":2,"subtag":[],"exclusion":["Construct","Trigger","Melee","Summoner","Shield","Ranged"],"tooltip":"You have to deal damage with Archmage"},
+{"name":"Ailment","domain":"Taker","level":2,"weight":8,"subtag":[],"exclusion":["Construct","Trigger"],"tooltip":"You have to deal damage with Ailments from your hits"},
 {"name":"Support","domain":"Taker","level":1,"weight":0,"subtag":["Aura","Curse","Defense","Warcry","Unique"],"exclusion":[],"tooltip":"You have to help other doing damage"},
 {"name":"Aura","domain":"Taker","level":2,"weight":0,"subtag":[],"exclusion":[],"tooltip":"You have to help other with Aura"},
 {"name":"Curse","domain":"Taker","level":2,"weight":0,"subtag":[],"exclusion":[],"tooltip":"You have to help other with Curse"},
@@ -403,30 +403,32 @@ function buildBuild() {
 		var tagPool = mainTag.reduce((acc, cur) => retrieveAllTag(cur, acc.include, acc.exclude), 
 			{"include": [], "exclude": ascendancy.exclude.map(n => TAG.find(t => t.name == n))});
 		//console.log("tag pool is ", tagPool);
+		/*
 		console.log("shortlisted gemlist " , GEM_F
 			// filter tag that are not exclude from ascendancy and in the list
-			.filter(g => g.holder.filter(t=> tagPool.include.filter(t => !ascendancy.exclude.includes(t.name)).map(s => s.name).includes(t)).length > 0)
-			.filter(g => g.taker.filter(t=> tagPool.include.filter(t => !ascendancy.exclude.includes(t.name)).map(s => s.name).includes(t)).length > 0)
-			.filter(g => g.dealer.filter(t=> tagPool.include.filter(t => !ascendancy.exclude.includes(t.name)).map(s => s.name).includes(t)).length > 0), " exclusion is: ", tagPool);
+			.filter(g => g.holder.filter(t=> tagPool.include.filter(p => !ascendancy.exclude.includes(p.name)).map(s => s.name).includes(t)).length > 0)
+			.filter(g => g.taker.filter(t=> tagPool.include.filter(p => !ascendancy.exclude.includes(p.name)).map(s => s.name).includes(t)).length > 0)
+			.filter(g => g.dealer.filter(t=> tagPool.include.filter(p => !ascendancy.exclude.includes(p.name)).map(s => s.name).includes(t)).length > 0), " exclusion is: ", tagPool);
+		*/
 		// Third, choose a gem
 		var gem = weightedPick(GEM_F
 			// filter tag that are not exclude from ascendancy and in the list
-			.filter(g => g.holder.filter(t=> tagPool.include.filter(t => !ascendancy.exclude.includes(t.name)).map(s => s.name).includes(t)).length > 0)
-			.filter(g => g.taker.filter(t=> tagPool.include.filter(t => !ascendancy.exclude.includes(t.name)).map(s => s.name).includes(t)).length > 0)
-			.filter(g => g.dealer.filter(t=> tagPool.include.filter(t => !ascendancy.exclude.includes(t.name)).map(s => s.name).includes(t)).length > 0)
+			.filter(g => g.holder.filter(t=> tagPool.include.filter(p => !ascendancy.exclude.includes(p.name)).map(s => s.name).includes(t)).length > 0)
+			.filter(g => g.taker.filter(t=> tagPool.include.filter(p => !ascendancy.exclude.includes(p.name)).map(s => s.name).includes(t)).length > 0)
+			.filter(g => g.dealer.filter(t=> tagPool.include.filter(p => !ascendancy.exclude.includes(p.name)).map(s => s.name).includes(t)).length > 0)
 			// filter tag that are exclude from selected tag
 			// .filter(g => g.tag.filter(s => tagPool.exclude.includes(s)) == 0)
 			);
 	} while(!gem)
 		
 	// epurate gem tag by keeping only those revelant with chosen tag
-	 console.log("tag pool for ", ascendancy.name, "/", mainTag," is ", tagPool, " picked: ", gem);
+	// console.log("tag pool for ", ascendancy.name, "/", mainTag," is ", tagPool, " picked: ", gem);
 	var gemTag = tagPool.include;
 	// Gem tags cleaning each level of tag
 	var tagInfoList = [gemTag.filter(t => t.domain == "Dealer").sort( (a, b) => b.level - a.level).shift(),
 		gemTag.filter(t => t.domain == "Taker").sort( (a, b) => b.level - a.level).shift(),
 		gemTag.filter(t => t.domain == "Holder").sort( (a, b) => b.level - a.level).shift()];
-	 console.log("tagInfoList=",tagInfoList);
+	// console.log("tagInfoList=",tagInfoList);
 	// Fourth, choose a keystone
 	/*console.log("require ", tagPool.include, ", excluding ", ascendancy.exclude, " & ", gemTag, " short list is : ", KEYSTONE_F
 		.filter(k => k.require.find(t => tagPool.include.map(n => n.name).includes(t)) || k.require.length == 0)
@@ -504,3 +506,44 @@ function initConf() {
 	
 }
 
+function getDistribution() {
+	// Build tzero level
+	var tzero = TAG.filter(t => t.level == 0);
+	var distributionMap = [{"tags":[], "dist":100, "exclude":[], "nextTag":[]}];
+	var safeguard = 10;
+	// For all tzero level, add one after the other to build distribution tree
+	for(i=0; i< tzero.length; i++) {
+		// console.log("iteration of tzero n°", i+1);
+		distributionMap = distributionMap.flatMap(curr => [{"tags":curr.tags, "dist":curr.dist, "exclude":curr.exclude, "nextTag": tzero.filter(t => !curr.exclude.find(e => e == t.name))}]);
+		// console.log("while loop begin with ", distributionMap);
+		do {
+			// While nextTag available, recursively build distribution tree for one tzero
+			console.log("enter while with ", distributionMap);
+			distributionMap = distributionMap.flatMap(curr => {
+				if(curr.nextTag && curr.nextTag.length > 0) {
+					var totalWeight = curr.nextTag.map(t => t.weight).reduce((a,b) => a+b, 0);
+					return curr.nextTag.map(next => [{"tags": curr.tags.concat(next), "dist": totalWeight == 0 ? 0 : curr.dist*next.weight/totalWeight, "exclude":curr.exclude.concat(next.exclusion).concat(next.name), "nextTag":next.subtag.filter(s => !curr.exclude.includes(s)).map(n => TAG.find(t => t.name == n))}]);
+				}
+				else return [[curr]];
+			}).flat();
+			// console.log("nextStep = ", distributionMap);
+		} while(distributionMap.find(d => d.nextTag.length > 0) && safeguard-- > 0);
+		// console.log("while loop finished with ", distributionMap);
+	}
+	// Associate all possible gem to all possible tag distribution
+	distributionMap = distributionMap.flatMap(curr => [{"tags":curr.tags, "dist":curr.dist, "exclude":curr.exclude, "nextTag": GEM
+			.filter(g => g.holder.filter(t=> curr.tags.map(s => s.name).includes(t)).length > 0)
+			.filter(g => g.taker.filter(t=> curr.tags.map(s => s.name).includes(t)).length > 0)
+			.filter(g => g.dealer.filter(t=> curr.tags.map(s => s.name).includes(t)).length > 0)}]);
+	// Run the nextTag on the gem 
+	distributionMap = distributionMap.flatMap(curr => {
+		if(curr.nextTag && curr.nextTag.length > 0) {
+			var totalWeight = curr.nextTag.map(t => t.weight).reduce((a,b) => a+b, 0);
+			return curr.nextTag.map(next => [{"tags": curr.tags, "dist": totalWeight == 0 ? 0 : curr.dist*next.weight/totalWeight, "exclude":curr.exclude, "nextTag":[], "gem": next.name}]);
+		}
+		else return [[curr]];
+	}).flat();
+	// Reduce the distribution map to group by gem name
+	var gemDistribution = distributionMap.reduce((curr, next) => curr.set(next.gem, curr.get(next.gem) + next.dist), new Map(GEM.map(g => [g.name, 0])));
+	return gemDistribution;
+}
